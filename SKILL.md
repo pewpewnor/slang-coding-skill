@@ -24,7 +24,7 @@ Follow the repository's established style if it is consistent. For new code, use
 | Element                | Rule                                                                                                                                |
 | ---------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Indentation            | 4 spaces; never tabs                                                                                                                |
-| Braces                 | Allman style: opening `{` on its own line for types, functions, and control flow                                                    |
+| Braces                 | K&R style: `{` in the same line for types, functions, and control flow                                                              |
 | Braces on conditionals | Always use braces, including single-statement `if`, `else`, loops, and `switch` cases with local declarations                       |
 | Line width             | Aim for 100 columns; use up to 120 when a break would harm clarity                                                                  |
 | Spacing                | One space around binary operators; after commas; before control-flow parentheses; no padding just inside `()` or `[]`               |
@@ -71,8 +71,7 @@ Use Slang modules for reusable shader libraries:
 ```slang
 module ShapeMath;
 
-public bool isInsideUnitCircle(float2 position)
-{
+public bool isInsideUnitCircle(float2 position) {
     return dot(position, position) <= 1.0;
 }
 ```
